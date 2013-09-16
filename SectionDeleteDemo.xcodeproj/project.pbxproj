@@ -13,7 +13,6 @@
 		578BFEFB17E7A225003AFE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFA17E7A225003AFE6A /* main.m */; };
 		578BFEFF17E7A225003AFE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFE17E7A225003AFE6A /* AppDelegate.m */; };
 		578BFF0217E7A225003AFE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BFF0017E7A225003AFE6A /* Main.storyboard */; };
-		578BFF0E17E7A225003AFE6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFF0D17E7A225003AFE6A /* XCTest.framework */; };
 		578BFF0F17E7A225003AFE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEEE17E7A225003AFE6A /* Foundation.framework */; };
 		578BFF1017E7A225003AFE6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF217E7A225003AFE6A /* UIKit.framework */; };
 		578BFF2517E7A2D4003AFE6A /* SectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFF2417E7A2D4003AFE6A /* SectionViewController.m */; };
@@ -41,7 +40,6 @@
 		578BFEFE17E7A225003AFE6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		578BFF0117E7A225003AFE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionDeleteDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		578BFF0D17E7A225003AFE6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		578BFF2317E7A2D4003AFE6A /* SectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionViewController.h; sourceTree = "<group>"; };
 		578BFF2417E7A2D4003AFE6A /* SectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFF0E17E7A225003AFE6A /* XCTest.framework in Frameworks */,
 				578BFF1017E7A225003AFE6A /* UIKit.framework in Frameworks */,
 				578BFF0F17E7A225003AFE6A /* Foundation.framework in Frameworks */,
 			);
@@ -92,7 +89,6 @@
 			children = (
 				578BFEEE17E7A225003AFE6A /* Foundation.framework */,
 				578BFEF217E7A225003AFE6A /* UIKit.framework */,
-				578BFF0D17E7A225003AFE6A /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
