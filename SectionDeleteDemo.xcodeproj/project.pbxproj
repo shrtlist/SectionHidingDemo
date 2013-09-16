@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		578BFEEF17E7A225003AFE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEEE17E7A225003AFE6A /* Foundation.framework */; };
-		578BFEF117E7A225003AFE6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF017E7A225003AFE6A /* CoreGraphics.framework */; };
 		578BFEF317E7A225003AFE6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF217E7A225003AFE6A /* UIKit.framework */; };
 		578BFEF917E7A225003AFE6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578BFEF717E7A225003AFE6A /* InfoPlist.strings */; };
 		578BFEFB17E7A225003AFE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFA17E7A225003AFE6A /* main.m */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		578BFEEB17E7A225003AFE6A /* SectionDeleteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionDeleteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578BFEEE17E7A225003AFE6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		578BFEF017E7A225003AFE6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		578BFEF217E7A225003AFE6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		578BFEF617E7A225003AFE6A /* SectionDeleteDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionDeleteDemo-Info.plist"; sourceTree = "<group>"; };
 		578BFEF817E7A225003AFE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFEF117E7A225003AFE6A /* CoreGraphics.framework in Frameworks */,
 				578BFEF317E7A225003AFE6A /* UIKit.framework in Frameworks */,
 				578BFEEF17E7A225003AFE6A /* Foundation.framework in Frameworks */,
 			);
@@ -94,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				578BFEEE17E7A225003AFE6A /* Foundation.framework */,
-				578BFEF017E7A225003AFE6A /* CoreGraphics.framework */,
 				578BFEF217E7A225003AFE6A /* UIKit.framework */,
 				578BFF0D17E7A225003AFE6A /* XCTest.framework */,
 			);
