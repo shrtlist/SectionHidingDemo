@@ -17,8 +17,6 @@
 		578BFF0E17E7A225003AFE6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFF0D17E7A225003AFE6A /* XCTest.framework */; };
 		578BFF0F17E7A225003AFE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEEE17E7A225003AFE6A /* Foundation.framework */; };
 		578BFF1017E7A225003AFE6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF217E7A225003AFE6A /* UIKit.framework */; };
-		578BFF1817E7A225003AFE6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578BFF1617E7A225003AFE6A /* InfoPlist.strings */; };
-		578BFF1A17E7A225003AFE6A /* SectionDeleteDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFF1917E7A225003AFE6A /* SectionDeleteDemoTests.m */; };
 		578BFF2517E7A2D4003AFE6A /* SectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFF2417E7A2D4003AFE6A /* SectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +44,6 @@
 		578BFF0117E7A225003AFE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionDeleteDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		578BFF0D17E7A225003AFE6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		578BFF1517E7A225003AFE6A /* SectionDeleteDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionDeleteDemoTests-Info.plist"; sourceTree = "<group>"; };
-		578BFF1717E7A225003AFE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		578BFF1917E7A225003AFE6A /* SectionDeleteDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionDeleteDemoTests.m; sourceTree = "<group>"; };
 		578BFF2317E7A2D4003AFE6A /* SectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionViewController.h; sourceTree = "<group>"; };
 		578BFF2417E7A2D4003AFE6A /* SectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				578BFEF417E7A225003AFE6A /* SectionDeleteDemo */,
-				578BFF1317E7A225003AFE6A /* SectionDeleteDemoTests */,
 				578BFEED17E7A225003AFE6A /* Frameworks */,
 				578BFEEC17E7A225003AFE6A /* Products */,
 			);
@@ -127,24 +121,6 @@
 				578BFEF717E7A225003AFE6A /* InfoPlist.strings */,
 				578BFEFA17E7A225003AFE6A /* main.m */,
 				578BFEFC17E7A225003AFE6A /* SectionDeleteDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		578BFF1317E7A225003AFE6A /* SectionDeleteDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				578BFF1917E7A225003AFE6A /* SectionDeleteDemoTests.m */,
-				578BFF1417E7A225003AFE6A /* Supporting Files */,
-			);
-			path = SectionDeleteDemoTests;
-			sourceTree = "<group>";
-		};
-		578BFF1417E7A225003AFE6A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				578BFF1517E7A225003AFE6A /* SectionDeleteDemoTests-Info.plist */,
-				578BFF1617E7A225003AFE6A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFF1817E7A225003AFE6A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +230,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFF1A17E7A225003AFE6A /* SectionDeleteDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +258,6 @@
 				578BFF0117E7A225003AFE6A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		578BFF1617E7A225003AFE6A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				578BFF1717E7A225003AFE6A /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,6 +422,7 @@
 				578BFF1F17E7A225003AFE6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578BFF2017E7A225003AFE6A /* Build configuration list for PBXNativeTarget "SectionDeleteDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +431,7 @@
 				578BFF2217E7A225003AFE6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
