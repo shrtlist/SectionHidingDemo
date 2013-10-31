@@ -25,7 +25,7 @@
 
 @implementation SectionViewController
 {
-    NSInteger numberOfSections;
+    NSInteger _numberOfSections;
 }
 
 #pragma mark - View lifecycle
@@ -35,7 +35,7 @@
     [super viewDidLoad];
 
     // Get the number of sections in the table view
-    numberOfSections = [super numberOfSectionsInTableView:[super tableView]];
+    _numberOfSections = [super numberOfSectionsInTableView:[super tableView]];
 }
 
 #pragma mark - Target-action method
@@ -51,14 +51,14 @@
         // Delete section 1
         [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
         
-        numberOfSections--;
+        _numberOfSections--;
     }
     else
     {
         // Insert section 1
         [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
         
-        numberOfSections++;
+        _numberOfSections++;
     }
     
     [self.tableView endUpdates];
@@ -68,7 +68,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return numberOfSections;
+    return _numberOfSections;
 }
 
 @end
