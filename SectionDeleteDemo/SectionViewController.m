@@ -28,6 +28,8 @@
     NSInteger _numberOfSections;
 }
 
+static const NSUInteger kSectionIndexToToggle = 1;
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -49,14 +51,14 @@
     if (toggleSwitch.on)
     {
         // Delete section 1
-        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:kSectionIndexToToggle] withRowAnimation:UITableViewRowAnimationFade];
         
         _numberOfSections--;
     }
     else
     {
         // Insert section 1
-        [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:UITableViewRowAnimationFade];
+        [self.tableView insertSections:[NSIndexSet indexSetWithIndex:kSectionIndexToToggle] withRowAnimation:UITableViewRowAnimationFade];
         
         _numberOfSections++;
     }
