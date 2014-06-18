@@ -23,9 +23,16 @@
 
 #import "SectionViewController.h"
 
+@interface SectionViewController () // Class extension
+@property (nonatomic, weak) IBOutlet UILabel *cellLabel;
+@property (nonatomic, weak) IBOutlet UISwitch *rowSwitch;
+@end
+
 @implementation SectionViewController
 {
     NSInteger _numberOfSections;
+    NSInteger _numberOfCellsHidden;
+    BOOL _isExtraRowShowing;
 }
 
 static const NSUInteger kSectionIndexToToggle = 1;
@@ -38,6 +45,8 @@ static const NSUInteger kSectionIndexToToggle = 1;
 
     // Get the number of sections in the table view
     _numberOfSections = [super numberOfSectionsInTableView:[super tableView]];
+    
+    self.rowSwitch.on = NO;
 }
 
 #pragma mark - Target-action method
@@ -66,11 +75,57 @@ static const NSUInteger kSectionIndexToToggle = 1;
     [self.tableView endUpdates];
 }
 
+- (IBAction)toggleHiddenCell:(id)sender
+{
+    [self.tableView beginUpdates];
+    
+    UISwitch *toggleSwitch = (UISwitch *)sender;
+    
+    if (toggleSwitch.on)
+    {
+        _isExtraRowShowing = YES;
+        _numberOfCellsHidden = 0;
+    }
+    else
+    {
+        _isExtraRowShowing = NO;
+        _numberOfCellsHidden = 1;
+    }
+    
+    [self.tableView endUpdates];
+}
+
 #pragma mark - UITableViewDataSource protocol conformance
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return _numberOfSections;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [super tableView:tableView numberOfRowsInSection:section];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat rowHeight = tableView.rowHeight;
+    
+    if ((indexPath.section == 0) && (indexPath.row == 1)) // This is the cell to hide - change as you need
+    {
+        if (!_isExtraRowShowing)
+        {
+            rowHeight = 0; // Hide the cell
+        }
+    }
+    return rowHeight;
+}
+
+#pragma mark - UITableViewDelegate protocol conformance
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
