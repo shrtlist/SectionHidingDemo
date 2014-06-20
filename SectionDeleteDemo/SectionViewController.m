@@ -31,7 +31,6 @@
 @implementation SectionViewController
 {
     NSInteger _numberOfSections;
-    NSInteger _numberOfCellsHidden;
     BOOL _isExtraRowShowing;
 }
 
@@ -61,14 +60,12 @@ static const NSUInteger kSectionIndexToToggle = 1;
     {
         // Delete section 1
         [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:kSectionIndexToToggle] withRowAnimation:UITableViewRowAnimationFade];
-        
         _numberOfSections--;
     }
     else
     {
         // Insert section 1
         [self.tableView insertSections:[NSIndexSet indexSetWithIndex:kSectionIndexToToggle] withRowAnimation:UITableViewRowAnimationFade];
-        
         _numberOfSections++;
     }
     
@@ -84,12 +81,10 @@ static const NSUInteger kSectionIndexToToggle = 1;
     if (toggleSwitch.on)
     {
         _isExtraRowShowing = YES;
-        _numberOfCellsHidden = 0;
     }
     else
     {
         _isExtraRowShowing = NO;
-        _numberOfCellsHidden = 1;
     }
     
     [self.tableView endUpdates];
