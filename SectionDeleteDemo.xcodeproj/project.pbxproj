@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		578BFEEF17E7A225003AFE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEEE17E7A225003AFE6A /* Foundation.framework */; };
-		578BFEF317E7A225003AFE6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF217E7A225003AFE6A /* UIKit.framework */; };
 		578BFEF917E7A225003AFE6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578BFEF717E7A225003AFE6A /* InfoPlist.strings */; };
 		578BFEFB17E7A225003AFE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFA17E7A225003AFE6A /* main.m */; };
 		578BFEFF17E7A225003AFE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFE17E7A225003AFE6A /* AppDelegate.m */; };
 		578BFF0217E7A225003AFE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BFF0017E7A225003AFE6A /* Main.storyboard */; };
-		578BFF0F17E7A225003AFE6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEEE17E7A225003AFE6A /* Foundation.framework */; };
-		578BFF1017E7A225003AFE6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578BFEF217E7A225003AFE6A /* UIKit.framework */; };
 		578BFF2517E7A2D4003AFE6A /* SectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFF2417E7A2D4003AFE6A /* SectionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +26,6 @@
 
 /* Begin PBXFileReference section */
 		578BFEEB17E7A225003AFE6A /* SectionDeleteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionDeleteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		578BFEEE17E7A225003AFE6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		578BFEF217E7A225003AFE6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		578BFEF617E7A225003AFE6A /* SectionDeleteDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionDeleteDemo-Info.plist"; sourceTree = "<group>"; };
 		578BFEF817E7A225003AFE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		578BFEFA17E7A225003AFE6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,8 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFEF317E7A225003AFE6A /* UIKit.framework in Frameworks */,
-				578BFEEF17E7A225003AFE6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFF1017E7A225003AFE6A /* UIKit.framework in Frameworks */,
-				578BFF0F17E7A225003AFE6A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				578BFEF417E7A225003AFE6A /* SectionDeleteDemo */,
-				578BFEED17E7A225003AFE6A /* Frameworks */,
 				578BFEEC17E7A225003AFE6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,15 +71,6 @@
 				578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		578BFEED17E7A225003AFE6A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578BFEEE17E7A225003AFE6A /* Foundation.framework */,
-				578BFEF217E7A225003AFE6A /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578BFEF417E7A225003AFE6A /* SectionDeleteDemo */ = {
