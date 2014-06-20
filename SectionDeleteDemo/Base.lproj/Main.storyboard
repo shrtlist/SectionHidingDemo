@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Section View Controller - Section hiding demo-->
+        <!--Section View Controller - Section/cell hiding demo-->
         <scene sceneID="X4D-UD-c1Z">
             <objects>
                 <tableViewController id="kfb-ss-NDH" customClass="SectionViewController" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                                     </connections>
                                 </switch>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hide section 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDj-2Y-1cO">
-                                    <rect key="frame" x="96" y="11" width="128" height="21"/>
+                                    <rect key="frame" x="77" y="11" width="111" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -52,7 +52,7 @@
                                                     </connections>
                                                 </switch>
                                                 <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show hidden cell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxF-Bj-sZ2">
-                                                    <rect key="frame" x="77" y="11" width="223" height="21"/>
+                                                    <rect key="frame" x="77" y="11" width="132" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -128,7 +128,7 @@
                             <outlet property="delegate" destination="kfb-ss-NDH" id="oxP-dm-D1F"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Section hiding demo" id="JCA-Hc-f2x"/>
+                    <navigationItem key="navigationItem" title="Section/cell hiding demo" id="JCA-Hc-f2x"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="cellLabel" destination="pxF-Bj-sZ2" id="kJO-H8-GEj"/>
