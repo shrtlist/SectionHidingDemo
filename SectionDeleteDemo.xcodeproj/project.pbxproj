@@ -8,45 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		578BFEF917E7A225003AFE6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578BFEF717E7A225003AFE6A /* InfoPlist.strings */; };
-		578BFEFB17E7A225003AFE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFA17E7A225003AFE6A /* main.m */; };
-		578BFEFF17E7A225003AFE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFEFE17E7A225003AFE6A /* AppDelegate.m */; };
 		578BFF0217E7A225003AFE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BFF0017E7A225003AFE6A /* Main.storyboard */; };
-		578BFF2517E7A2D4003AFE6A /* SectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578BFF2417E7A2D4003AFE6A /* SectionViewController.m */; };
+		67A94B561C1757CA00FD7674 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A94B551C1757CA00FD7674 /* AppDelegate.swift */; };
+		67A94B581C17587000FD7674 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A94B571C17587000FD7674 /* SectionViewController.swift */; };
+		67A94B5A1C1761D600FD7674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A94B591C1761D600FD7674 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		578BFF1117E7A225003AFE6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 578BFEE317E7A225003AFE6A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 578BFEEA17E7A225003AFE6A;
-			remoteInfo = SectionDeleteDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		578BFEEB17E7A225003AFE6A /* SectionDeleteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionDeleteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578BFEF617E7A225003AFE6A /* SectionDeleteDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SectionDeleteDemo-Info.plist"; sourceTree = "<group>"; };
 		578BFEF817E7A225003AFE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		578BFEFA17E7A225003AFE6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		578BFEFC17E7A225003AFE6A /* SectionDeleteDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SectionDeleteDemo-Prefix.pch"; sourceTree = "<group>"; };
-		578BFEFD17E7A225003AFE6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		578BFEFE17E7A225003AFE6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		578BFF0117E7A225003AFE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionDeleteDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		578BFF2317E7A2D4003AFE6A /* SectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionViewController.h; sourceTree = "<group>"; };
-		578BFF2417E7A2D4003AFE6A /* SectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionViewController.m; sourceTree = "<group>"; };
+		67A94B551C1757CA00FD7674 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67A94B571C17587000FD7674 /* SectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		67A94B591C1761D600FD7674 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		578BFEE817E7A225003AFE6A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		578BFF0917E7A225003AFE6A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				578BFEEB17E7A225003AFE6A /* SectionDeleteDemo.app */,
-				578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,10 +54,9 @@
 		578BFEF417E7A225003AFE6A /* SectionDeleteDemo */ = {
 			isa = PBXGroup;
 			children = (
-				578BFEFD17E7A225003AFE6A /* AppDelegate.h */,
-				578BFEFE17E7A225003AFE6A /* AppDelegate.m */,
-				578BFF2317E7A2D4003AFE6A /* SectionViewController.h */,
-				578BFF2417E7A2D4003AFE6A /* SectionViewController.m */,
+				67A94B551C1757CA00FD7674 /* AppDelegate.swift */,
+				67A94B571C17587000FD7674 /* SectionViewController.swift */,
+				67A94B591C1761D600FD7674 /* LaunchScreen.storyboard */,
 				578BFF0017E7A225003AFE6A /* Main.storyboard */,
 				578BFEF517E7A225003AFE6A /* Supporting Files */,
 			);
@@ -91,8 +68,6 @@
 			children = (
 				578BFEF617E7A225003AFE6A /* SectionDeleteDemo-Info.plist */,
 				578BFEF717E7A225003AFE6A /* InfoPlist.strings */,
-				578BFEFA17E7A225003AFE6A /* main.m */,
-				578BFEFC17E7A225003AFE6A /* SectionDeleteDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,37 +92,14 @@
 			productReference = 578BFEEB17E7A225003AFE6A /* SectionDeleteDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		578BFF0B17E7A225003AFE6A /* SectionDeleteDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 578BFF2017E7A225003AFE6A /* Build configuration list for PBXNativeTarget "SectionDeleteDemoTests" */;
-			buildPhases = (
-				578BFF0817E7A225003AFE6A /* Sources */,
-				578BFF0917E7A225003AFE6A /* Frameworks */,
-				578BFF0A17E7A225003AFE6A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				578BFF1217E7A225003AFE6A /* PBXTargetDependency */,
-			);
-			name = SectionDeleteDemoTests;
-			productName = SectionDeleteDemoTests;
-			productReference = 578BFF0C17E7A225003AFE6A /* SectionDeleteDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		578BFEE317E7A225003AFE6A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Your company";
-				TargetAttributes = {
-					578BFF0B17E7A225003AFE6A = {
-						TestTargetID = 578BFEEA17E7A225003AFE6A;
-					};
-				};
 			};
 			buildConfigurationList = 578BFEE617E7A225003AFE6A /* Build configuration list for PBXProject "SectionDeleteDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -163,7 +115,6 @@
 			projectRoot = "";
 			targets = (
 				578BFEEA17E7A225003AFE6A /* SectionDeleteDemo */,
-				578BFF0B17E7A225003AFE6A /* SectionDeleteDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,15 +124,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A94B5A1C1761D600FD7674 /* LaunchScreen.storyboard in Resources */,
 				578BFEF917E7A225003AFE6A /* InfoPlist.strings in Resources */,
 				578BFF0217E7A225003AFE6A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		578BFF0A17E7A225003AFE6A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,28 +137,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578BFEFF17E7A225003AFE6A /* AppDelegate.m in Sources */,
-				578BFF2517E7A2D4003AFE6A /* SectionViewController.m in Sources */,
-				578BFEFB17E7A225003AFE6A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		578BFF0817E7A225003AFE6A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				67A94B581C17587000FD7674 /* SectionViewController.swift in Sources */,
+				67A94B561C1757CA00FD7674 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		578BFF1217E7A225003AFE6A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 578BFEEA17E7A225003AFE6A /* SectionDeleteDemo */;
-			targetProxy = 578BFF1117E7A225003AFE6A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		578BFEF717E7A225003AFE6A /* InfoPlist.strings */ = {
@@ -253,6 +182,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -267,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -299,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -309,12 +239,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SectionDeleteDemo/SectionDeleteDemo-Prefix.pch";
 				INFOPLIST_FILE = "SectionDeleteDemo/SectionDeleteDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -323,53 +256,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SectionDeleteDemo/SectionDeleteDemo-Prefix.pch";
 				INFOPLIST_FILE = "SectionDeleteDemo/SectionDeleteDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		578BFF2117E7A225003AFE6A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SectionDeleteDemo.app/SectionDeleteDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SectionDeleteDemo/SectionDeleteDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "SectionDeleteDemoTests/SectionDeleteDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		578BFF2217E7A225003AFE6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SectionDeleteDemo.app/SectionDeleteDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SectionDeleteDemo/SectionDeleteDemo-Prefix.pch";
-				INFOPLIST_FILE = "SectionDeleteDemoTests/SectionDeleteDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -390,15 +285,6 @@
 			buildConfigurations = (
 				578BFF1E17E7A225003AFE6A /* Debug */,
 				578BFF1F17E7A225003AFE6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		578BFF2017E7A225003AFE6A /* Build configuration list for PBXNativeTarget "SectionDeleteDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				578BFF2117E7A225003AFE6A /* Debug */,
-				578BFF2217E7A225003AFE6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
