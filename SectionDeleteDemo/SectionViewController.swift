@@ -31,12 +31,6 @@ class SectionViewController: UITableViewController {
     var isExtraRowShowing: Bool = false
 
     let kSectionIndexToToggle = 1
-    
-    // MARK: Initialization
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
 
     // MARK: View lifecycle
 
@@ -46,16 +40,16 @@ class SectionViewController: UITableViewController {
         // Get the number of sections in the table view
         numberOfSections = super.numberOfSectionsInTableView(super.tableView)
         
-        rowSwitch!.on = false
+        rowSwitch?.on = false
     }
 
 
     // MARK: Target-action methods
     
-    @IBAction func toggleValueChanged(sender: UISwitch?) {
+    @IBAction func toggleValueChanged(sender: UISwitch) {
         tableView.beginUpdates()
         
-        if sender!.on {
+        if sender.on {
             // Delete section 1
             tableView.deleteSections(NSIndexSet(index: kSectionIndexToToggle), withRowAnimation: UITableViewRowAnimation.Fade)
             numberOfSections--
@@ -69,10 +63,10 @@ class SectionViewController: UITableViewController {
         tableView.endUpdates()
     }
 
-    @IBAction func toggleHiddenCell(sender: UISwitch?) {
+    @IBAction func toggleHiddenCell(sender: UISwitch) {
         tableView.beginUpdates()
         
-        if sender!.on {
+        if sender.on {
             isExtraRowShowing = true
         }
         else {
@@ -82,7 +76,7 @@ class SectionViewController: UITableViewController {
         tableView.endUpdates()
     }
 
-// MARK: UITableViewDataSource protocol conformance
+    // MARK: UITableViewDataSource protocol conformance
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return numberOfSections
@@ -97,9 +91,9 @@ class SectionViewController: UITableViewController {
         
         if (indexPath.section == 0) && (indexPath.row == 1) // This is the cell to hide - change as you need
         {
-            if (!isExtraRowShowing)
-            {
-                rowHeight = 0 // Hide the cell
+            if (!isExtraRowShowing) {
+                // Hide the cell by setting its row height to zero
+                rowHeight = 0
             }
         }
         return rowHeight
