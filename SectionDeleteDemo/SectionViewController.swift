@@ -24,8 +24,7 @@
 import UIKit
 
 class SectionViewController: UITableViewController {
-    @IBOutlet weak var cellLabel: UILabel?
-    @IBOutlet weak var rowSwitch: UISwitch?
+    @IBOutlet weak var rowSwitch: UISwitch!
 
     var numberOfSections: NSInteger = 0
     var isExtraRowShowing: Bool = false
@@ -40,7 +39,7 @@ class SectionViewController: UITableViewController {
         // Get the number of sections in the table view
         numberOfSections = super.numberOfSectionsInTableView(super.tableView)
         
-        rowSwitch?.on = false
+        rowSwitch.on = false
     }
 
 
