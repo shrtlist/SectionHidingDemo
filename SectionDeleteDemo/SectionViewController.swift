@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 shrtlist
+ * Copyright (c) 2017 shrtlist
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -37,35 +37,35 @@ class SectionViewController: UITableViewController {
         super.viewDidLoad()
 
         // Get the number of sections in the table view
-        numberOfSections = super.numberOfSectionsInTableView(super.tableView)
+        numberOfSections = super.numberOfSections(in: super.tableView)
         
-        rowSwitch.on = false
+        rowSwitch.isOn = false
     }
 
 
     // MARK: Target-action methods
     
-    @IBAction func toggleValueChanged(sender: UISwitch) {
+    @IBAction func toggleValueChanged(_ sender: UISwitch) {
         tableView.beginUpdates()
         
-        if sender.on {
+        if sender.isOn {
             // Delete section 1
-            tableView.deleteSections(NSIndexSet(index: kSectionIndexToToggle), withRowAnimation: UITableViewRowAnimation.Fade)
-            numberOfSections--
+            tableView.deleteSections(IndexSet(integer: kSectionIndexToToggle), with: UITableViewRowAnimation.fade)
+            numberOfSections -= 1
         }
         else {
             // Insert section 1
-            tableView.insertSections(NSIndexSet(index: kSectionIndexToToggle), withRowAnimation: UITableViewRowAnimation.Fade)
-            numberOfSections++;
+            tableView.insertSections(IndexSet(integer: kSectionIndexToToggle), with: UITableViewRowAnimation.fade)
+            numberOfSections += 1;
         }
         
         tableView.endUpdates()
     }
 
-    @IBAction func toggleHiddenCell(sender: UISwitch) {
+    @IBAction func toggleHiddenCell(_ sender: UISwitch) {
         tableView.beginUpdates()
         
-        if sender.on {
+        if sender.isOn {
             isExtraRowShowing = true
         }
         else {
@@ -77,15 +77,15 @@ class SectionViewController: UITableViewController {
 
     // MARK: UITableViewDataSource protocol conformance
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return super.tableView(tableView, numberOfRowsInSection: section)
     }
 
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var rowHeight = tableView.rowHeight
         
         if (indexPath.section == 0) && (indexPath.row == 1) // This is the cell to hide - change as you need
@@ -100,8 +100,8 @@ class SectionViewController: UITableViewController {
 
     // MARK: UITableViewDelegate protocol conformance
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
