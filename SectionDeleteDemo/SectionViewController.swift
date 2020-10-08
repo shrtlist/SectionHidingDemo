@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2017 shrtlist
+ * Copyright (c) 2020 shrtlist
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -50,12 +50,12 @@ class SectionViewController: UITableViewController {
         
         if sender.isOn {
             // Delete section 1
-            tableView.deleteSections(IndexSet(integer: kSectionIndexToToggle), with: UITableViewRowAnimation.fade)
+            tableView.deleteSections(IndexSet(integer: kSectionIndexToToggle), with: UITableView.RowAnimation.fade)
             numberOfSections -= 1
         }
         else {
             // Insert section 1
-            tableView.insertSections(IndexSet(integer: kSectionIndexToToggle), with: UITableViewRowAnimation.fade)
+            tableView.insertSections(IndexSet(integer: kSectionIndexToToggle), with: UITableView.RowAnimation.fade)
             numberOfSections += 1;
         }
         
